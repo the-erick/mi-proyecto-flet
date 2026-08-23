@@ -90,9 +90,8 @@ def main(page: ft.Page):
     switch_rastreo = ft.Switch(label="Rastrear", value=False, on_change=al_cambiar_switch)
 
     page.add(
-        ft.Icon(name=ft.icons.LOCATION_ON, size=64, color=ft.colors.BLUE),
+        ft.Icon(icon=ft.Icons.LOCATION_ON, size=64, color=ft.Colors.BLUE),
         switch_rastreo,
         texto_estado
     )
-
 ft.app(target=main)
